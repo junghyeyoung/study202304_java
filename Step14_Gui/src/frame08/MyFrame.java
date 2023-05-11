@@ -31,7 +31,7 @@ public class MyFrame extends JFrame implements ActionListener{
 
 		
 		//문자열을 단순히 출력할 수 있는 JLable 객체
-		JLabel label=new JLabel("...");
+		label=new JLabel("...");
 		
 		//MyFrame 을 액션 리스너로 등록을 한다.
 		sendBtn.addActionListener(this);
