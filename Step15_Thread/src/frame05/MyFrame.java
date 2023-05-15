@@ -63,18 +63,50 @@ public class MyFrame extends JFrame implements ActionListener{
 			}
 		}.start();
 		*/
-	
+		/*
 		new Thread(new Runnable() {
 
 			@Override
 			public void run() {
-				
+				//카운트 값을 저장할 지역변수 만들고 초기 값 대입
+            int count=10;
+            //반복문 돌면서 
+            while(true) {
+               System.out.println("현재 count:"+count);
+               if(count==0) {//만일 카운트가 0 이면 
+                  break;//반복문 탈출
+               }
+               //1초 마다
+               try {
+                  Thread.sleep(1000);
+               } catch (InterruptedException e) {
+                  e.printStackTrace();
+               }
+               //카운트를 1씩 감소 시키고 
+               count--;
+              }
 			}
 		}).start();
-		
+		*/
 		new Thread(()->{
-			
-		}).start();
+	         //카운트 값을 저장할 지역변수 만들고 초기 값 대입
+	         int count=10;
+	         //반복문 돌면서 
+	         while(true) {
+	            System.out.println("현재 count:"+count);
+	            if(count==0) {//만일 카운트가 0 이면 
+	               break;//반복문 탈출
+	            }
+	            //1초 마다
+	            try {
+	               Thread.sleep(1000);
+	            } catch (InterruptedException e) {
+	               e.printStackTrace();
+	            }
+	            //카운트를 1씩 감소 시키고 
+	            count--;
+	         }
+	      }).start();
 	}
 	
 	//run 했을 때 app 이 시작되는 아주 특별한 main 메소드
