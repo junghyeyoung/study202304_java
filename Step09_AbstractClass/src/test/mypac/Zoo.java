@@ -21,7 +21,7 @@ public class Zoo {
 		//내부 클래스로 객체를 생성해서 리턴해 주기
 		return new Monkey();
 	}
-	public Tiger gerTiger() {
+	public Tiger getTiger() {
 		return new Tiger();
 	}
 }
